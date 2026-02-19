@@ -87,7 +87,8 @@ h1 {
 .instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); color: white; }
 .twitch { background: #9146FF; color: white; }
 .x { background: black; color: white; }
-.whatsapp { background: #25D366; color: white; }
+.whatsapp { background: #25D366; color: rgb(254, 254, 254); }
+.tiktok { background: linear-gradient(45deg, #21eef5, #ffffff, #eb2466);  color:rgb(9, 9, 9); }
 
 .redes a:hover {
     transform: scale(1.05);
