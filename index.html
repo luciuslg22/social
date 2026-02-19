@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Redes Sociais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <video autoplay muted loop id="bg-video">
+    <source src="fundo.mp4" type="video/mp4">
+</video>
+
+    <div class="container">
+        <h1>Lucius L. Gomes</h1>
+        <p>🍁| Rio de Janeiro - RJ</p>
+        <img src="foto.jpg" alt="Minha Foto" class="minha-foto">
+
+        <div class="redes">
+
+    <a href="https://github.com/luciuslg22" target="_blank" class="github">
+        <i class="fa-brands fa-github"></i> GitHub
+    </a> 
+
+    <a href="https://instagram.com/luciuslg22" target="_blank" class="instagram">
+        <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://twitch.tv/luciuslg" target="_blank" class="twitch">
+    <i class="fa-brands fa-twitch"></i> Twitch
+</a>
+
+<a href="https://x.com/luciuslg22x" target="_blank" class="x">
+    <i class="fa-brands fa-x-twitter"></i> Twitter
+</a>
+
+<a href="https://wa.me/5522997563856" target="_blank" class="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+<p class="views">👁️ <span id="contador">5</span> visualizações</p>
+
+
+<button onclick="toggleMusica()" class="botao-musica" id="musicBtn">
+    🎵 Música On
+</button>
+
+
+<audio id="bg-music" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    var musica = document.getElementById("bg-music");
+
+    function toggleMusica() {
+        if (musica.paused) {
+            musica.play();
+        } else {
+            musica.pause();
+        }
+    }
+</script>
+
+<script>
+    var musica = document.getElementById("bg-music");
+    var btn = document.getElementById("musicBtn");
+
+    function toggleMusica() {
+        if (musica.paused) {
+            musica.play();
+            btn.innerHTML = "🎵 Música On";
+        } else {
+            musica.pause();
+            btn.innerHTML = "▶️ Música Off";
+        }
+    }
+</script>
+
+<script>
+fetch('https://api.countapi.xyz/hit/luciuslg22-github-visitas/contador')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('contador').innerText = data.value;
+  });
+</script>
+</div>
+    </div>
+</body>
+</html>
+
