@@ -98,7 +98,7 @@ h1 {
 .botao-musica {
     position: fixed;
     bottom: 11px;
-    right: 105px; /* AGORA VISÍVEL */
+    right: 102px; /* AGORA VISÍVEL */
     padding: 10px 18px;
     border-radius: 15px;
     border: 1px solid rgb(102, 2, 109);
@@ -161,7 +161,7 @@ h1 {
     }
 
     .botao-musica {
-        right: 105px;
+        right: 102px;
         bottom: 5px;
     }
 }
