@@ -97,7 +97,7 @@ h1 {
 /* BOTÃO MÚSICA */
 .botao-musica {
     position: fixed;
-    bottom: 10px;
+    bottom: 11px;
     right: 120px; /* AGORA VISÍVEL */
     padding: 10px 18px;
     border-radius: 15px;
@@ -161,7 +161,7 @@ h1 {
     }
 
     .botao-musica {
-        right: 150px;
-        bottom: 35px;
+        right: 130px;
+        bottom: 25px;
     }
 }
