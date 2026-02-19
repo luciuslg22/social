@@ -201,3 +201,45 @@ h1 {
     color: #f3f3f3;
     text-shadow: 0 0 10px #7f070700;
 }
+/* Ajustes para celular */
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .minha-foto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .redes a {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    #bg-video {
+        object-fit: cover;
+    }
+}
+.minha-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
