@@ -12,10 +12,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    text-align: center;
+    min-height: 100dvh; /* mais moderno que 100vh */
     padding: 20px;
-    overflow-x: hidden;
+    text-align: center;
 }
 
 /* VÍDEO DE FUNDO */
@@ -102,7 +101,7 @@ h1 {
     right: 120px; /* AGORA VISÍVEL */
     padding: 10px 18px;
     border-radius: 15px;
-    border: 1px solid white;
+    border: 1px solid rgb(102, 2, 109);
     background: rgb(102, 2, 109);
     color: white;
     font-weight: 600;
@@ -152,5 +151,17 @@ h1 {
     .redes a {
         font-size: 14px;
         padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+
+    .botao-musica {
+        right: 12px;
+        bottom: 20px;
     }
 }
