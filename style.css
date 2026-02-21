@@ -10,10 +10,9 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100dvh; /* mais moderno que 100vh */
-    padding: 20px;
+    flex-direction: column;
+    min-height: 100dvh;
+    padding: 20px 20px 0 20px; /* remove o padding de baixo */
     text-align: center;
 }
 
@@ -43,6 +42,7 @@ body::after {
     backdrop-filter: blur(15px);
     padding: 30px;
     border-radius: 20px;
+    margin: 40px auto; /* mantém centralizado */
     width: 100%;
     max-width: 380px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -174,4 +174,21 @@ h1 {
 .botao-musica {
     width: 60%;
     max-width: 220px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 15px 15px;
+    background: #080808a1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.logomarca img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }
